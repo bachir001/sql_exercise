@@ -37,5 +37,20 @@ DELETE FROM students where name="Layal";
 
 
 
+3_joins 
+
+
+SELECT employees.Name ,employees.Company ,companies.Date from employees INNER JOIN companies on employees.Company=companies.Name; 
+
+
+SELECT employees.Name from employees INNER JOIN companies on employees.Company=companies.Name WHERE companies.DATE<2000 ; 
+
+
+SELECT employees.Company from employees INNER JOIN companies on employees.Company=companies.Name WHERE employees.Role="Graphic Designer"; 
+
+
+
+
+
 
 
