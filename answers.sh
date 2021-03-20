@@ -50,6 +50,30 @@ SELECT employees.Company from employees INNER JOIN companies on employees.Compan
 
 
 
+4_count & filter
+
+
+SELECT name FROM students WHERE Points= (SELECT max(Points) from students);
+
+
+SELECT avg(Points)FROM students;
+
+
+SELECT count() FROM students WHERE Points=500;
+
+
+SELECT name FROM students WHERE name like '%s%';
+
+
+
+SELECT * FROM students ORDER by Points DESC;
+
+
+
+
+
+
+
 
 
 
